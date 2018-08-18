@@ -11,7 +11,7 @@ RUN set -x \
 	&& DEBIAN_CODE_NAME=`lsb_release -c -s` \
 	&& wget -O - https://rspamd.com/apt-stable/gpg.key | apt-key add - \
 	&& echo "deb http://rspamd.com/apt-stable/ $DEBIAN_CODE_NAME main" > /etc/apt/sources.list.d/rspamd.list \
-	&& apt-get purge wget \
+	&& apt-get purge -y wget \
 	&& apt-get update \
 	&& apt-get --no-install-recommends install -y rspamd \
 	&& apt-get clean \
