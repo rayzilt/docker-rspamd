@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Update and Install Rspamd
 RUN set -x \
 	&& apt-get update \
-	&& apt-get --no-install-recommends install -y lsb-release wget gnupg openssl \
+	&& apt-get --no-install-recommends install -y lsb-release wget gnupg openssl ca-certificates \
 	&& DEBIAN_CODE_NAME=`lsb_release -c -s` \
 	&& wget -O - https://rspamd.com/apt-stable/gpg.key | apt-key add - \
 	&& echo "deb http://rspamd.com/apt-stable/ $DEBIAN_CODE_NAME main" > /etc/apt/sources.list.d/rspamd.list \
