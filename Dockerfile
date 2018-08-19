@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stretch
 LABEL maintainer="Rayzilt - <docker@rayzilt.nl>"
 
 # Set apt non-interactive
