@@ -12,10 +12,11 @@ Version  | Tag Name
 No environment variables are used.
 
 ### Volumes ###
-Volume  | Function
------ | ------------
-/etc/rspamd/local.d | Override Rspamd configuration
-/var/lib/rspamd | Rspamd data location
+Volume                  | Function                      | Persistent
+----------------------- | ----------------------------- | --------
+/etc/rspamd/local.d/    | Change Rspamd configuration   | Yes
+/etc/rspamd/override.d/ | Override Rspamd configuration | No
+/var/lib/rspamd/        | Rspamd data                   | Yes
 
 ### Exposed Ports ###
 Port  | Function
