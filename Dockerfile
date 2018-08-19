@@ -14,7 +14,7 @@ RUN set -x \
 	&& apt-get purge -y lsb-release wget gnupg \
 	&& apt-get update \
 	&& apt-get --no-install-recommends install -y rspamd \
-	&& apt-get autoremove --purge -y
+	&& apt-get autoremove --purge -y \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
