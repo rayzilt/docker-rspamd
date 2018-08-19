@@ -26,7 +26,7 @@ Port  | Function
 
 ### Usage ###
 After first deployment run `rspamadm configwizard` inside the docker to configure Rspamd.
-This allows configuration of the _Webinterface_, _DKIM_ and _Redis_ configuration. The tool writes the configuration in `/etc/rspamd/local.d`
+This allows configuration of the _Webinterface_, _DKIM_ and _Redis_. The tool writes the configuration in `/etc/rspamd/local.d`
 
 ### Links ###
 * Rspamd Official website: https://rspamd.com
