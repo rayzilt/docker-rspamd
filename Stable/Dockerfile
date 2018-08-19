@@ -22,6 +22,7 @@ RUN set -x \
 COPY rspamd.conf.local.override /etc/rspamd/
 
 # Keep database persistent
+VOLUME /etc/rspamd/local.d
 VOLUME /var/lib/rspamd
 
 # Port 11334 is for web frontend
