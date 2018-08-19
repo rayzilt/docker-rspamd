@@ -21,7 +21,7 @@ RUN set -x \
 # Override default settings
 COPY rspamd.conf.local.override /etc/rspamd/
 
-# Keep database persistent
+# Keep database and configuration persistent
 VOLUME /etc/rspamd/local.d
 VOLUME /var/lib/rspamd
 
