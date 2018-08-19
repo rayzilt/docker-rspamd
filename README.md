@@ -1,4 +1,4 @@
-## rayzilt/rspamd ##
+# rayzilt/rspamd #
 
 Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stretch Slim.
 
