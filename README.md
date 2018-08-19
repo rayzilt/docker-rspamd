@@ -28,9 +28,9 @@ After first deployment run `rspamadm configwizard` inside the docker to configur
 This allows configuration of the _Webinterface_, _DKIM_ and _Redis_ configuration. The tool writes the configuration in `/etc/rspamd/local.d`
 
 ### Links ###
-Rspamd Official website: https://rspamd.com
-Documentation: https://rspamd.com/doc/index.html
-Rspamd Github: https://github.com/rspamd/rspamd
+* Rspamd Official website: https://rspamd.com
+* Documentation: https://rspamd.com/doc/index.html
+* Rspamd Github: https://github.com/rspamd/rspamd
 
 ### Support ###
 This Docker image is for personal use but let me know if there are any improvements available.
