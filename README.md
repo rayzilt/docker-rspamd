@@ -35,4 +35,4 @@ This allows configuration of the _Webinterface_, _DKIM_ and _Redis_ configuratio
 
 ### Support ###
 This Docker image is for personal use but let me know if there are any improvements available.
-Please use [Github] (https://github.com/Rayzilt/Docker-Rspamd) to send me a message
+Please use [Github](https://github.com/Rayzilt/Docker-Rspamd) to send me a message
