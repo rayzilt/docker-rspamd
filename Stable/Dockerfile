@@ -35,4 +35,4 @@ HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 	CMD /usr/bin/rspamadm control stat || exit 1
 
 # Run Rspamd
-ENTRYPOINT ["/usr/bin/rspamd","-f","-u _rspamd","-g _rspamd"]
+ENTRYPOINT ["/usr/bin/rspamd","-f","-u","_rspamd","-g","_rspamd"]
