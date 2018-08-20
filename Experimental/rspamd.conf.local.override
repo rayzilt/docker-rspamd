@@ -1,3 +1,10 @@
+options {
+    pidfile = false;
+    .include "$CONFDIR/options.inc"
+    .include(try=true; priority=1,duplicate=merge) "$LOCAL_CONFDIR/local.d/options.inc"
+    .include(try=true; priority=10) "$LOCAL_CONFDIR/override.d/options.inc"
+}
+
 logging {
 	type = "console";
 	.include "$CONFDIR/logging.inc"
