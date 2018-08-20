@@ -34,5 +34,5 @@ EXPOSE 11332 11334
 HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 	CMD /usr/bin/rspamadm control stat || exit 1
 
-# Run Rspamd	
-CMD /usr/bin/rspamd -f -u _rspamd -g _rspamd
+# Run Rspamd
+ENTRYPOINT ["/usr/bin/rspamd","-f","-u _rspamd","-g _rspamd"]
