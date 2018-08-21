@@ -38,15 +38,23 @@ HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 ENTRYPOINT ["/usr/bin/rspamd","-f","-u","_rspamd","-g","_rspamd"]
 
 # Setup Labels
-ARG SOURCE_COMMIT
-ARG SOURCE_URL 
+#ARG SOURCE_COMMIT
+#ARG SOURCE_URL 
+ARG BRANCHTEST=SOURCE_BRANCH
+ARG COMMITTEST=SOURCE_COMMIT
+ARG URLTEST=SOURCE_URL
+
+
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.name="Rspamd" \
 	org.label-schema.description="Rspamd - Spam Filter" \
 	org.label-schema.usage="https://hub.docker.com/r/rayzilt/rspamd/" \
 	org.label-schema.url="https://rspamd.com" \
-	org.label-schema.vcs-url="$SOURCE_URL " \
+	org.label-schema.vcs-url=$SOURCE_URL \
 	org.label-schema.vcs-ref=$SOURCE_COMMIT \
 	org.label-schema.vendor="Rayzilt" \
 	org.label-schema.schema-version="1.0"
+	nl.rayzilt.url=$URLTEST
+	nl.rayzilt.commit=$COMMITTEST
+	nl.rayzilt.branch=$BRANCHTEST
