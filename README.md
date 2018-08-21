@@ -24,6 +24,10 @@ Port  | Function
 11332 | Milter
 11334 | Webinterface
 
+### Healthcheck ###
+The healthcheck runs every minute to check if Rspamd is still responding.
+Program `rspamadm` will be responsible for this, default available in the toolset of Rspamd.
+
 ### Usage ###
 After first deployment run `rspamadm configwizard` inside the docker to configure Rspamd.
 This allows configuration of the _Webinterface_, _DKIM_ and _Redis_. The tool writes the configuration in `/etc/rspamd/local.d`
