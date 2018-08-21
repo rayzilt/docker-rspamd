@@ -39,7 +39,7 @@ ENTRYPOINT ["/usr/bin/rspamd","-f","-u","_rspamd","-g","_rspamd"]
 
 # Setup Labels
 LABEL org.label-schema.name="Rspamd" \
-	org.label-schema.description="Rspamd - Spam Filter" \
+	org.label-schema.description="Rspamd Spam Filter - EXPERIMENTAL" \
 	org.label-schema.usage="https://hub.docker.com/r/rayzilt/rspamd/" \
 	org.label-schema.url="https://rspamd.com" \
 	org.label-schema.vcs-url="https://github.com/Rayzilt/Docker-Rspamd/tree/master/Experimental \
