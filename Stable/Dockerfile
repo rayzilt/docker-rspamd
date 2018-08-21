@@ -36,3 +36,12 @@ HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 
 # Run Rspamd
 ENTRYPOINT ["/usr/bin/rspamd","-f","-u","_rspamd","-g","_rspamd"]
+
+# Setup Labels
+LABEL org.label-schema.name="Rspamd" \
+	org.label-schema.description="Rspamd - Spam Filter" \
+	org.label-schema.usage="https://hub.docker.com/r/rayzilt/rspamd/" \
+	org.label-schema.url="https://rspamd.com" \
+	org.label-schema.vcs-url="https://github.com/Rayzilt/Docker-Rspamd/tree/master/Stable \
+	org.label-schema.vendor="Rayzilt" \
+	org.label-schema.schema-version="1.0" \
