@@ -3,10 +3,10 @@
 Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stretch Slim.
 
 ### Tags ###
-Version  | Tag Name | Dockerfile
--------- | ------------ | ---------
-1.7.x    | latest       | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Stable/Dockerfile)
-1.8.x    | experimental | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Experimental/Dockerfile)
+Branch   | Version  | Tag Name     | Dockerfile
+-------- | -------- | ------------ | ---------
+Stable   | [![](https://images.microbadger.com/badges/version/rayzilt/rspamd.svg)](https://microbadger.com/images/rayzilt/rspamd "Get your own version badge on microbadger.com")    | latest       | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Stable/Dockerfile)
+Unstable | 1.8.x    | experimental | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Experimental/Dockerfile)
 
 ### Environment Variables ###
 No environment variables are used.
