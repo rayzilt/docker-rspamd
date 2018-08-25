@@ -4,12 +4,6 @@ VERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a hre
 
 docker tag \
 	"${IMAGE_NAME}" \
-	"${DOCKER_REPO}:experimental"
-docker push \
-	"${DOCKER_REPO}:experimental"
-
-docker tag \
-	"${IMAGE_NAME}" \
 	"${DOCKER_REPO}:${VERSION}"
 docker push \
 	"${DOCKER_REPO}:${VERSION}"
