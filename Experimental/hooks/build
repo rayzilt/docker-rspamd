@@ -4,8 +4,8 @@
 
 # $IMAGE_NAME var is injected into the build so the tag is correct.
 echo "[***] Build hook running"
-echo "Do we have perl?"
-perl --version
+echo "And apt?"
+apt --version
 echo "Should have info"
 
 docker build \
