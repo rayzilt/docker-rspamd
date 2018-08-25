@@ -4,12 +4,9 @@
 
 # $IMAGE_NAME var is injected into the build so the tag is correct.
 echo "[***] Build hook running"
-echo "And apt?"
-apt --version
-echo "Should have info"
 
 docker build \
-#  --build-arg VERSION=$(git ls-remote --tags -q https://github.com/Cisco-Talos/clamav-devel | sed -n "s/^[[:xdigit:]]\{40\}[[:blank:]]refs\/tags\/clamav-\([0-9]\{1\}\.[0-9]\{3\}\.[0-9]\{1\}\)$/\1/p" | sort --version-sort | tail -1) \
+  --build-arg VERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\([0-9]\{1\}\.[0-9]\{1,2\}\.[0-9]\{1,2\}-[0-9]\{1,2\}\~git.*\)~.*.dsc\".*/\1/p" | tail -1) \
   --build-arg COMMIT=$(git rev-parse --short HEAD) \
   --build-arg URL=$(git config --get remote.origin.url) \
   --build-arg BRANCH=$(git rev-parse --abbrev-ref HEAD) \
