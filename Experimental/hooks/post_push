@@ -2,8 +2,10 @@
 
 VERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\([0-9]\{1\}\.[0-9]\{1,2\}\.[0-9]\{1,2\}\)-[0-9]\{1,2\}~git.*\~.*.dsc\".*/\1/p" | tail -1)
 
+MVERSION=${VERSION%.*}
+
 docker tag \
 	"${IMAGE_NAME}" \
-	"${DOCKER_REPO}:${VERSION}"
+	"${DOCKER_REPO}:${MVERSION}"
 docker push \
-	"${DOCKER_REPO}:${VERSION}"
+	"${DOCKER_REPO}:${MVERSION}"

@@ -40,7 +40,6 @@ ENTRYPOINT ["/usr/bin/rspamd","-f","-u","_rspamd","-g","_rspamd"]
 # Setup Labels
 ARG VERSION
 ARG COMMIT
-ARG URL
 ARG BRANCH
 ARG DATE
 
@@ -51,7 +50,7 @@ LABEL org.label-schema.name="Rspamd" \
 	org.label-schema.vendor="Rayzilt" \
 	org.label-schema.schema-version="1.0" \
         org.label-schema.version=$VERSION \
-        org.label-schema.vcs-url=$URL \
+        org.label-schema.vcs-url="https://github.com/rspamd/rspamd/" \
         org.label-schema.vcs-ref=$COMMIT \
         org.label-schema.build-date=$DATE \
 
