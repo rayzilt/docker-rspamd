@@ -6,7 +6,7 @@ Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stretch Sl
 Branch   | Version  | Tag Name     | Dockerfile
 -------- | -------- | ------------ | ---------
 Stable   | [![](https://images.microbadger.com/badges/version/rayzilt/rspamd.svg)](https://microbadger.com/images/rayzilt/rspamd "Get your own version badge on microbadger.com")    | latest       | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Stable/Dockerfile)
-Unstable | [![](https://images.microbadger.com/badges/version/rayzilt/rspamd:1.8.0-0.svg)](https://microbadger.com/images/rayzilt/rspamd:1.8.0-0 "Get your own version badge on microbadger.com")    | experimental | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Experimental/Dockerfile)
+Unstable | [![](https://images.microbadger.com/badges/version/rayzilt/rspamd:1.8.svg)](https://microbadger.com/images/rayzilt/rspamd:1.8 "Get your own version badge on microbadger.com")    | experimental | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Experimental/Dockerfile)
 
 ### Environment Variables ###
 No environment variables are used.
