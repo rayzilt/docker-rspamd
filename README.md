@@ -1,6 +1,6 @@
 # rayzilt/rspamd #
 
-Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stretch Slim.
+Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stable Slim.
 
 ### Tags ###
 Branch   | Version  | Tag Name     | Dockerfile | Image Info
