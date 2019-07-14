@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:stable-slim
 LABEL maintainer="Rayzilt - <docker@rayzilt.nl>"
 
 # Set apt non-interactive
@@ -34,7 +34,7 @@ EXPOSE 11332 11334
 HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 	CMD /usr/bin/rspamadm control stat || exit 1
 
-# Run Rspamd	
+# Run Rspamd
 ENTRYPOINT ["/usr/bin/rspamd","-f","-u","_rspamd","-g","_rspamd"]
 
 # Setup Labels
@@ -53,4 +53,3 @@ LABEL org.label-schema.name="Rspamd" \
         org.label-schema.vcs-url="https://github.com/rspamd/rspamd/" \
         org.label-schema.vcs-ref=$COMMIT \
         org.label-schema.build-date=$DATE \
-
