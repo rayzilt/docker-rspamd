@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:stable-slim
 LABEL maintainer="Rayzilt - <docker@rayzilt.nl>"
 
 # Set apt non-interactive
@@ -53,4 +53,3 @@ LABEL org.label-schema.name="Rspamd" \
         org.label-schema.vcs-url="https://github.com/rspamd/rspamd/" \
         org.label-schema.vcs-ref=$COMMIT \
         org.label-schema.build-date=$DATE \
-
