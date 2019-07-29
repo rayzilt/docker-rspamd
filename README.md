@@ -2,6 +2,8 @@
 
 Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stable Slim.
 
+[![Build Automated](https://img.shields.io/docker/automated/rayzilt/rspamd.svg)](https://hub.docker.com/r/rayzilt/rspamd)
+[![Build Status](https://img.shields.io/docker/cloud/build/rayzilt/rspamd.svg)](https://hub.docker.com/r/rayzilt/rspamd)
 [![Docker Pulls](https://img.shields.io/docker/pulls/rayzilt/rspamd.svg)](https://hub.docker.com/r/rayzilt/rspamd)
 ### Tags ###
 Branch   | Version  | Tag Name     | Dockerfile | Image Info
