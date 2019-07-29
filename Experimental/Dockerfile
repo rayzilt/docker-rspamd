@@ -6,16 +6,16 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install Rspamd
 RUN set -x \
-	&& apt-get update \
-	&& apt-get --no-install-recommends install -y lsb-release wget gnupg openssl ca-certificates \
+	&& apt update \
+	&& apt --no-install-recommends install -y lsb-release wget gnupg openssl ca-certificates \
 	&& DEBIAN_CODE_NAME=`lsb_release -c -s` \
 	&& wget -O - https://rspamd.com/apt/gpg.key | apt-key add - \
 	&& echo "deb http://rspamd.com/apt/ $DEBIAN_CODE_NAME main" > /etc/apt/sources.list.d/rspamd.list \
-	&& apt-get purge -y lsb-release wget gnupg \
-	&& apt-get update \
-	&& apt-get --no-install-recommends install -y rspamd \
-	&& apt-get autoremove --purge -y \
-	&& apt-get clean \
+	&& apt purge -y lsb-release wget gnupg \
+	&& apt update \
+	&& apt --no-install-recommends install -y rspamd \
+	&& apt autoremove --purge -y \
+	&& apt clean \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Override default settings
