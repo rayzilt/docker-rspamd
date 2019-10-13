@@ -5,7 +5,7 @@
 # $IMAGE_NAME var is injected into the build so the tag is correct.
 echo "[***] Build hook running"
 
-VERSION=$(git ls-remote --tags -q https://github.com/rspamd/rspamd | sed -n "s/^[[:xdigit:]]\{40\}[[:blank:]]refs\/tags\/\([0-9]\{1\}\.[0-9]\{1,2\}\.[0-9]\{1,2\}\)$/\1/p" | sort --version-sort | tail -1)
+VERSION=$(git ls-remote --tags -q https://github.com/rspamd/rspamd | sed -n "s/^[[:xdigit:]]\{40\}[[:blank:]]refs\/tags\/\([0-9]\{1\}\.[0-9]\{1,2\}\($\|\.[0-9]\{1,2\}$\)\)/\1/p" | sort --version-sort | tail -1)
 
 docker build \
   --build-arg VERSION=$VERSION \
