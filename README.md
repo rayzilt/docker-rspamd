@@ -9,7 +9,7 @@ Non-Official Dockerized [Rspamd](https://rspamd.com/) based on Debian Stable Sli
 Branch   | Version  | Tag Name     | Dockerfile | Image Info
 -------- | -------- | ------------ | ---------  | -----------
 Stable   | [![Stable Version](https://images.microbadger.com/badges/version/rayzilt/rspamd.svg)](https://microbadger.com/images/rayzilt/rspamd "Get your own version badge on microbadger.com")    | latest       | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Stable/Dockerfile) | [![Dockerfile](https://images.microbadger.com/badges/image/rayzilt/rspamd.svg)](https://microbadger.com/images/rayzilt/rspamd "Get your own image badge on microbadger.com")
-Unstable | [![Unstable Version](https://images.microbadger.com/badges/version/rayzilt/rspamd:2.0.svg)](https://microbadger.com/images/rayzilt/rspamd:2.0 "Get your own version badge on microbadger.com")    | experimental | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Experimental/Dockerfile) | [![Dockerfile](https://images.microbadger.com/badges/image/rayzilt/rspamd:2.0.svg)](https://microbadger.com/images/rayzilt/rspamd:2.0 "Get your own image badge on microbadger.com")
+Unstable | [![Unstable Version](https://images.microbadger.com/badges/version/rayzilt/rspamd:2.1.svg)](https://microbadger.com/images/rayzilt/rspamd:2.1 "Get your own version badge on microbadger.com")    | experimental | [Dockerfile](https://github.com/Rayzilt/Docker-Rspamd/blob/master/Experimental/Dockerfile) | [![Dockerfile](https://images.microbadger.com/badges/image/rayzilt/rspamd:2.1.svg)](https://microbadger.com/images/rayzilt/rspamd:2.1 "Get your own image badge on microbadger.com")
 
 ### Environment Variables ###
 No environment variables are used.
