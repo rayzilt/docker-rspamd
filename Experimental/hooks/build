@@ -6,8 +6,8 @@
 echo "[***] Build hook running"
 
 docker build \
-  --build-arg VERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\([0-9]\{1\}\.[0-9]\{1,2\}\.[0-9]\{1,2\}-[0-9]\{1,2\}\)\~git.*\~.*.dsc\".*/\1/p" | tail -1) \
-  --build-arg COMMIT=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_[0-9]\{1\}\.[0-9]\{1,2\}\.[0-9]\{1,2\}-[0-9]\{1,2\}\~git.*\~\(.*\)\~.*.dsc\".*/\1/p" | tail -1) \
+  --build-arg VERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\(.*\)\~git.*\~.*.dsc\".*/\1/p" | tail -1) \
+  --build-arg COMMIT=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_.*\~git.*\~\(.*\)\~.*.dsc\".*/\1/p" | tail -1) \
   --build-arg BRANCH=$(git rev-parse --abbrev-ref HEAD) \
   --build-arg DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") \
   -t $IMAGE_NAME .

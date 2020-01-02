@@ -2,7 +2,7 @@
 
 #VERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\([0-9]\{1\}\.[0-9]\{1,2\}\.[0-9]\{1,2\}\)-[0-9]\{1,2\}~git.*\~.*.dsc\".*/\1/p" | tail -1)
 #MVERSION=${VERSION%.*}
-MVERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\([0-9]\{1\}\.[0-9]\{1,2\}\)-[0-9]\{1,2\}~git.*\~.*.dsc\".*/\1/p" | tail -1)
+MVERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a href=\"rspamd_\(.*\)\~git.*\~.*.dsc\".*/\1/p" | tail -1)
 
 docker tag \
 	"${IMAGE_NAME}" \
