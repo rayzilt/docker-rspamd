@@ -20,6 +20,8 @@ RUN set -x \
 
 # Override default settings
 COPY rspamd.conf.local.override /etc/rspamd/
+COPY worker-controller.inc /etc/rspamd/override.d/
+COPY worker-proxy.inc /etc/rspamd/override.d/
 
 # Keep database and configuration persistent
 VOLUME /etc/rspamd/local.d
