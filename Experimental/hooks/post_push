@@ -6,6 +6,6 @@ MVERSION=$(curl -s https://rspamd.com/apt/pool/main/r/rspamd/ | sed -n "s/^<a hr
 
 docker tag \
 	"${IMAGE_NAME}" \
-	"${DOCKER_REPO}:${MVERSION}"
+	"${DOCKER_REPO}:experimental-${MVERSION}"
 docker push \
-	"${DOCKER_REPO}:${MVERSION}"
+	"${DOCKER_REPO}:experimental-${MVERSION}"
