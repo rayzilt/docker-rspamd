@@ -4,6 +4,6 @@ VERSION=$(git ls-remote --tags -q https://github.com/rspamd/rspamd | sed -n "s/^
 
 docker tag \
 	"${IMAGE_NAME}" \
-	"${DOCKER_REPO}:${VERSION}"
+	"${DOCKER_REPO}:stable-${VERSION}"
 docker push \
-	"${DOCKER_REPO}:${VERSION}"
+	"${DOCKER_REPO}:stable-${VERSION}"
